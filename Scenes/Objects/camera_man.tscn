@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbw64rav8ijx8"]
+
+[ext_resource type="Texture2D" uid="uid://c2dpfhyg7y1w" path="res://Sprites/ball_replacable_textr.png" id="1_mvc6p"]
+
+[node name="camera_man" type="Sprite2D"]
+visible = false
+texture = ExtResource("1_mvc6p")

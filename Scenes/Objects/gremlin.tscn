@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://cw26sav4pg3hp"]
+
+[ext_resource type="Script" uid="uid://bhyh5j373kp7y" path="res://Scripts/gremlin.gd" id="1_j1tc3"]
+[ext_resource type="Texture2D" uid="uid://dkqirhpge0fh5" path="res://Sprites/kris_walking.png" id="1_xc7wj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1tc3"]
+atlas = ExtResource("1_xc7wj")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_477la"]
+atlas = ExtResource("1_xc7wj")
+region = Rect2(100, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6upo"]
+atlas = ExtResource("1_xc7wj")
+region = Rect2(200, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6iqv"]
+atlas = ExtResource("1_xc7wj")
+region = Rect2(100, 100, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1edr2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1tc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_477la")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6upo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6iqv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xc7wj"]
+radius = 11.0
+height = 34.0
+
+[node name="gremlin" type="Area2D"]
+script = ExtResource("1_j1tc3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-5.684342e-14, 0)
+scale = Vector2(0.74, 0.46499997)
+sprite_frames = SubResource("SpriteFrames_1edr2")
+autoplay = "default"
+frame = 2
+frame_progress = 0.9678006
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_xc7wj")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
