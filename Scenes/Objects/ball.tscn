@@ -1,30 +1,41 @@
-[gd_scene load_steps=5 format=3 uid="uid://08ggbvtaj3et"]
+[gd_scene load_steps=7 format=3 uid="uid://08ggbvtaj3et"]
 
-[ext_resource type="Texture2D" uid="uid://c2dpfhyg7y1w" path="res://Sprites/ball_replacable_textr.png" id="1_afn8n"]
 [ext_resource type="Script" uid="uid://b2h2oaq7ly7cj" path="res://Scripts/ball.gd" id="1_w86wi"]
+[ext_resource type="Texture2D" uid="uid://efwh48mss1ly" path="res://Graphics/Obr_001.png" id="2_j8djf"]
+[ext_resource type="Texture2D" uid="uid://bnnf6crjb6gxf" path="res://Graphics/Obr_002.png" id="3_gla3l"]
+[ext_resource type="Texture2D" uid="uid://bggcqwc7splxw" path="res://Graphics/Obr_003.png" id="4_6nxf0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w86wi"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_afn8n")
+"texture": ExtResource("2_j8djf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gla3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6nxf0")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_afn8n"]
-radius = 13.0
+radius = 8.0
 
 [node name="Ball" type="Area2D"]
+scale = Vector2(1.6, 1.6)
 script = ExtResource("1_w86wi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.96875, 1)
 sprite_frames = SubResource("SpriteFrames_w86wi")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5.625)
 shape = SubResource("CircleShape2D_afn8n")
 
 [node name="Timer" type="Timer" parent="."]
