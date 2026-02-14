@@ -1,21 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://vevferkh7s4l"]
+[gd_scene load_steps=7 format=3 uid="uid://vevferkh7s4l"]
 
 [ext_resource type="Script" uid="uid://xvdqc3kuucqf" path="res://Scripts/ball_bullet.gd" id="1_hikup"]
-[ext_resource type="Texture2D" uid="uid://dj2628fx4q1ml" path="res://Sprites/bullet_replacable_textr.png" id="1_uquep"]
+[ext_resource type="Texture2D" uid="uid://do02c85et3egq" path="res://Graphics/firebal_001l1.png" id="2_ofs3i"]
+[ext_resource type="Texture2D" uid="uid://ktx8bmkojjvb" path="res://Graphics/firebal_001l2.png" id="3_wcyl1"]
+[ext_resource type="Texture2D" uid="uid://cyfu540fn6kcu" path="res://Graphics/firebal_001l3.png" id="4_y4bfy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hikup"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_uquep")
+"texture": ExtResource("2_ofs3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wcyl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y4bfy")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hikup"]
-size = Vector2(11, 5)
+size = Vector2(11, 6)
 
 [node name="Ball_bullet" type="Area2D"]
 script = ExtResource("1_hikup")
@@ -23,7 +31,8 @@ script = ExtResource("1_hikup")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_hikup")
+frame_progress = 0.8052146
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0.5)
+position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hikup")
