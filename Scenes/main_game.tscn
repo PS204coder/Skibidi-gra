@@ -10,11 +10,11 @@
 position = Vector2(64, 81)
 
 [node name="gremlin" parent="." instance=ExtResource("2_pu3va")]
-position = Vector2(561, 174)
+position = Vector2(403, 78)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
-zoom = Vector2(3.4, 3.4)
+zoom = Vector2(3.3, 3.3)
 
 [node name="GroundForEnemies" type="Sprite2D" parent="."]
 position = Vector2(193, 114)
