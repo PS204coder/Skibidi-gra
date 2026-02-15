@@ -1,7 +1,50 @@
-[gd_scene format=3 uid="uid://dbn2cqc8wlgri"]
+[gd_scene load_steps=8 format=3 uid="uid://dbn2cqc8wlgri"]
+
+[ext_resource type="Script" uid="uid://dr2dr01hh52la" path="res://Scripts/machine_destroyer.gd" id="1_301ty"]
+[ext_resource type="PackedScene" uid="uid://cw26sav4pg3hp" path="res://Scenes/Objects/gremlin.tscn" id="2_c3suo"]
+[ext_resource type="Texture2D" uid="uid://dkqirhpge0fh5" path="res://Sprites/GremlinAnimation/kris_walking.png" id="2_whvry"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c3suo"]
+radius = 16.0
+height = 50.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1ymn"]
+atlas = ExtResource("2_whvry")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whvry"]
+atlas = ExtResource("2_whvry")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nq2hh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1ymn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whvry")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="machine_destroyer" type="CharacterBody2D"]
+script = ExtResource("1_301ty")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_c3suo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.861023e-06, 1.9073486e-06)
+scale = Vector2(0.71, 0.68)
+sprite_frames = SubResource("SpriteFrames_nq2hh")
+
+[node name="gremlin" parent="." instance=ExtResource("2_c3suo")]
+visible = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
