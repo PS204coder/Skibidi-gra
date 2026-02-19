@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b53ns5t3vtgp8"
-path="res://.godot/imported/goblin_-Recovered4.png-a70bb0b3e1806922df513b3c2fb2b4b4.ctex"
+uid="uid://b5nc2ulju6qs2"
+path="res://.godot/imported/goblin_armour_002.png-17d92e2be0a81850297aeeb409c376b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/GremlinAnimation/goblin_-Recovered4.png"
-dest_files=["res://.godot/imported/goblin_-Recovered4.png-a70bb0b3e1806922df513b3c2fb2b4b4.ctex"]
+source_file="res://Sprites/GremlinAnimation/Gremlin_armour/goblin_armour_002.png"
+dest_files=["res://.godot/imported/goblin_armour_002.png-17d92e2be0a81850297aeeb409c376b1.ctex"]
 
 [params]
 

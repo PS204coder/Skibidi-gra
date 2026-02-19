@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://cw26sav4pg3hp"]
 
 [ext_resource type="Script" uid="uid://bhyh5j373kp7y" path="res://Scripts/gremlin.gd" id="1_j1tc3"]
-[ext_resource type="Texture2D" uid="uid://cfgr68ed8f0bh" path="res://Sprites/GremlinAnimation/goblin_-Recovered1.png" id="2_f6iqv"]
-[ext_resource type="Texture2D" uid="uid://dqtomb2qfwpfl" path="res://Sprites/GremlinAnimation/goblin_-Recovered2.png" id="3_odcwj"]
-[ext_resource type="Texture2D" uid="uid://ig2nnlkk5xp3" path="res://Sprites/GremlinAnimation/goblin_-Recovered3.png" id="4_acboo"]
-[ext_resource type="Texture2D" uid="uid://b53ns5t3vtgp8" path="res://Sprites/GremlinAnimation/goblin_-Recovered4.png" id="5_ve8ng"]
+[ext_resource type="Texture2D" uid="uid://cfgr68ed8f0bh" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered1.png" id="2_f6iqv"]
+[ext_resource type="Texture2D" uid="uid://dqtomb2qfwpfl" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered2.png" id="3_odcwj"]
+[ext_resource type="Texture2D" uid="uid://ig2nnlkk5xp3" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered3.png" id="4_acboo"]
+[ext_resource type="Texture2D" uid="uid://b53ns5t3vtgp8" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered4.png" id="5_ve8ng"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1edr2"]
 animations = [{
