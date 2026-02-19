@@ -1,7 +1,2 @@
-res://Scenes/Objects/machine_destroyer.tscn
-res://Scripts/machine_destroyer.gd
-res://Scenes/main_game.tscn
 res://Scenes/Objects/gremlin.tscn
-res://Scripts/gremlin.gd
-res://Scenes/Objects/ball_bullet.tscn
-res://Scripts/ball_bullet.gd
+res://Scenes/Objects/machine_destroyer.tscn
