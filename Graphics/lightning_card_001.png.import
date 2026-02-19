@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj2628fx4q1ml"
-path="res://.godot/imported/bullet_replacable_textr.png-bd21e59161a6998f0cfcdd02f5693aa9.ctex"
+uid="uid://bmpoa0utdtgae"
+path="res://.godot/imported/lightning_card_001.png-bda1f876fa84178e6e039099457dca65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/bullet_replacable_textr.png"
-dest_files=["res://.godot/imported/bullet_replacable_textr.png-bd21e59161a6998f0cfcdd02f5693aa9.ctex"]
+source_file="res://Graphics/lightning_card_001.png"
+dest_files=["res://.godot/imported/lightning_card_001.png-bda1f876fa84178e6e039099457dca65.ctex"]
 
 [params]
 

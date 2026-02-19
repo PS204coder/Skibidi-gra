@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dledv0emaxbmu"
-path="res://.godot/imported/machine_destroyer_004.png-bdf3ea8eba0372071b4326aa126c5c35.ctex"
+uid="uid://khxh84k35jm0"
+path="res://.godot/imported/goblin_femboy_002.png-0c0d752b99dd71840bc36a55b1b03ab1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/machine_destroyer_004.png"
-dest_files=["res://.godot/imported/machine_destroyer_004.png-bdf3ea8eba0372071b4326aa126c5c35.ctex"]
+source_file="res://Sprites/GremlinAnimation/Gremalin_femboy/goblin_femboy_002.png"
+dest_files=["res://.godot/imported/goblin_femboy_002.png-0c0d752b99dd71840bc36a55b1b03ab1.ctex"]
 
 [params]
 
