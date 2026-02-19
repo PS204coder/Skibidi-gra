@@ -10,3 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void: #w momencie zespawnienia przez magiczną kulke od razu leci w strone gremlinow
 	var _velocity = Vector2.RIGHT * speed
 	position += _velocity * delta
+
+
+func _on_area_entered(area: Area2D) -> void:
+	queue_free()

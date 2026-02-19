@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771527203
-::res://Graphics/::1771527011
+::res://::1771528321
+::res://Graphics/::1771527204
 firebal_001l1.png::CompressedTexture2D::8195160016078679932::1771067517::1771067801::1::::<><><>0<>0<>97f22218a069763c064a67c1d49e9665<>res://.godot/imported/firebal_001l1.png-897a9a0809a4f3f21e788c40ef5c3d5e.ctex::
 firebal_001l2.png::CompressedTexture2D::742567107274380759::1771067517::1771067801::1::::<><><>0<>0<>819438f45c41dd15e193fdc868bab5a3<>res://.godot/imported/firebal_001l2.png-3040ed2c21ee60327a7ebac4ff8d5f5b.ctex::
 firebal_001l3.png::CompressedTexture2D::6468964979184798504::1771067517::1771067801::1::::<><><>0<>0<>f732157810b327503148082cb38be558<>res://.godot/imported/firebal_001l3.png-828398f1abc80cdbc851c2c33b8eef8c.ctex::
@@ -26,8 +26,8 @@ Obr_001.png::CompressedTexture2D::292427112446341862::1771067517::1771067801::1:
 Obr_002.png::CompressedTexture2D::3326071638085039891::1771067517::1771067801::1::::<><><>0<>0<>f741b4b8ae3f2f6a14ddcf331c2c6e8a<>res://.godot/imported/Obr_002.png-48c3b6dd0f4a31e509430d55cc175d6f.ctex::
 Obr_003.png::CompressedTexture2D::2820091178815567976::1771067517::1771067801::1::::<><><>0<>0<>c7dc1e94b4e011aa490528cd68b0e600<>res://.godot/imported/Obr_003.png-badb90b545ebd425cbe3704ce0bfb6e9.ctex::
 slots_for_blocks_001.png::CompressedTexture2D::6824406090083755315::1771490364::1771490364::1::::<><><>0<>0<>8d53f783541cd3093b4709fa63b9b870<>res://.godot/imported/slots_for_blocks_001.png-41db10dc4973cdf53cec4f260e0c4830.ctex::
-::res://Scenes/::1771523605
-main_game.tscn::PackedScene::1395568789328462538::1771523605::0::1::::<><><>0<>0<><>::uid://08ggbvtaj3et::::res://Scenes/Objects/ball.tscn<>uid://bkel1i2nmhhco::::res://Graphics/Ground_for_enemies.png<>uid://dbn2cqc8wlgri::::res://Scenes/Objects/machine_destroyer.tscn
+::res://Scenes/::1771527220
+main_game.tscn::PackedScene::1395568789328462538::1771527220::0::1::::<><><>0<>0<><>::uid://08ggbvtaj3et::::res://Scenes/Objects/ball.tscn<>uid://bkel1i2nmhhco::::res://Graphics/Ground_for_enemies.png<>uid://dbn2cqc8wlgri::::res://Scenes/Objects/machine_destroyer.tscn
 title_screen.tscn::PackedScene::4895306432898634165::1770279200::0::1::::<><><>0<>0<><>::
 ::res://Scenes/Objects/::1771492701
 ball.tscn::PackedScene::1823220659382712563::1771067517::0::1::::<><><>0<>0<><>::uid://b2h2oaq7ly7cj::::res://Scripts/ball.gd<>uid://efwh48mss1ly::::res://Graphics/Obr_001.png<>uid://bnnf6crjb6gxf::::res://Graphics/Obr_002.png<>uid://bggcqwc7splxw::::res://Graphics/Obr_003.png
@@ -42,7 +42,7 @@ machine_destroyer.gd::GDScript::8408424455337431714::1771492662::0::1::::<>Chara
 ::res://Sprites/::1771527176
 ::res://Sprites/GremlinAnimation/::1771527099
 kris_walking.png::CompressedTexture2D::7894697017077562152::1770279200::1771073364::1::::<><><>0<>0<>3b4924872bda5754d52444b857e6adf1<>res://.godot/imported/kris_walking.png-3468b0a20b7938cd2f6d7f5b3cc9d94d.ctex::
-::res://Sprites/GremlinAnimation/Gremalin_femboy/::1771527135
+::res://Sprites/GremlinAnimation/Gremalin_femboy/::1771527204
 goblin_femboy_001.png::CompressedTexture2D::1397707363055558216::1771527011::1771527204::1::::<><><>0<>0<>5f55a5fa3836c6aa0555ad75252c9980<>res://.godot/imported/goblin_femboy_001.png-929e620664a09c21bc1d6c69edf605fa.ctex::
 goblin_femboy_002.png::CompressedTexture2D::717749850612549637::1771527011::1771527204::1::::<><><>0<>0<>64d9135e573fe2131a868aab39248fb8<>res://.godot/imported/goblin_femboy_002.png-0c0d752b99dd71840bc36a55b1b03ab1.ctex::
 goblin_femboy_003.png::CompressedTexture2D::2479398533775118454::1771527011::1771527204::1::::<><><>0<>0<>965301c92afa6e1d74caaab292db6035<>res://.godot/imported/goblin_femboy_003.png-39615a9d0d55302637c1a24d4a78f7fb.ctex::
