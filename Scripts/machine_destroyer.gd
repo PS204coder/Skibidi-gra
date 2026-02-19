@@ -13,7 +13,7 @@ func _ready() -> void:
 func spawn_gremlin(): #spawnowanie normalnych gremlinow ( co sekunde, bez inputu gracza)
 	var instance = GREMLIN.instantiate()
 	add_child(instance)
-	instance.position = Vector2(170, 52)
+	instance.position = Vector2(170, 49)
 
 
 func _on_timer_timeout() -> void:
