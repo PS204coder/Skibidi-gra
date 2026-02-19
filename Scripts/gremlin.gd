@@ -11,6 +11,7 @@ func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na k
 	#death
 	if gremlin_hp <= 0:
 		print("skibidi")
+		queue_free()
 
 
 func _on_area_entered(area: Area2D) -> void:

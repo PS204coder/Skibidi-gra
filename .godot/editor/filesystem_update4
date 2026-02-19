@@ -1,6 +1,2 @@
-res://Scripts/ball_bullet.gd
-res://Scenes/Objects/ball_bullet.tscn
 res://Scripts/gremlin.gd
-res://Scenes/Objects/ball.tscn
-res://Scripts/ball.gd
 res://Scenes/Objects/gremlin.tscn
