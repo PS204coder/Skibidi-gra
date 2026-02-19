@@ -15,4 +15,4 @@ func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na k
 
 
 func _on_area_entered(area: Area2D) -> void:
-	gremlin_hp -= 5 #tutaj attack_value zamiast liczby, trzeba podlaczyc z kodu ball_bullet
+	gremlin_hp -= Global.attack_value_def_bullet #tutaj attack_value zamiast liczby, trzeba podlaczyc z kodu ball_bullet
