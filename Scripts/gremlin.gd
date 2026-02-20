@@ -3,7 +3,19 @@ extends Area2D
 var speed = 50
 var gremlin_hp = 20
 
+@onready var animation: AnimatedSprite2D = $AnimatedSprite2D
+
+var random_number = randi_range(0, 1000)
+func _ready() -> void:
+	if random_number == 652:
+		animation.play("walk_femboy")
+	else:
+		animation.play("walk_normal")
+
 func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na kulke
+	
+	print(random_number)
+	
 	#movement
 	var _velocity = Vector2.LEFT * speed
 	position += _velocity * delta
