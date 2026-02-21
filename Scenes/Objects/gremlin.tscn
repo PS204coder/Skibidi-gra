@@ -1,13 +1,55 @@
-[gd_scene load_steps=8 format=3 uid="uid://cw26sav4pg3hp"]
+[gd_scene load_steps=16 format=3 uid="uid://cw26sav4pg3hp"]
 
 [ext_resource type="Script" uid="uid://bhyh5j373kp7y" path="res://Scripts/gremlin.gd" id="1_j1tc3"]
+[ext_resource type="Texture2D" uid="uid://blobcvwhw7dwc" path="res://Graphics/goblin_armour_001.png" id="2_d30bp"]
 [ext_resource type="Texture2D" uid="uid://cfgr68ed8f0bh" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered1.png" id="2_f6iqv"]
 [ext_resource type="Texture2D" uid="uid://dqtomb2qfwpfl" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered2.png" id="3_odcwj"]
+[ext_resource type="Texture2D" uid="uid://4kpdh06jl75h" path="res://Graphics/goblin_armour_002.png" id="3_r0hwj"]
 [ext_resource type="Texture2D" uid="uid://ig2nnlkk5xp3" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered3.png" id="4_acboo"]
+[ext_resource type="Texture2D" uid="uid://vv1jtgb0msph" path="res://Graphics/goblin_armour_003.png" id="4_rgkfx"]
+[ext_resource type="Texture2D" uid="uid://dbn4u5bc1i4ef" path="res://Graphics/goblin_armour_004.png" id="5_2fnh5"]
 [ext_resource type="Texture2D" uid="uid://b53ns5t3vtgp8" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered4.png" id="5_ve8ng"]
+[ext_resource type="Texture2D" uid="uid://dwor0rem6xu45" path="res://Graphics/goblin_femboy_001.png" id="6_8ub5w"]
+[ext_resource type="Texture2D" uid="uid://cbdxlvyquvn4f" path="res://Graphics/goblin_femboy_002.png" id="7_7k7d8"]
+[ext_resource type="Texture2D" uid="uid://643iv1t7r02k" path="res://Graphics/goblin_femboy_003.png" id="8_2c0wr"]
+[ext_resource type="Texture2D" uid="uid://gp6bdgouusm7" path="res://Graphics/goblin_femboy_004.png" id="9_dlsdt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1edr2"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_d30bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_r0hwj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rgkfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2fnh5")
+}],
+"loop": true,
+"name": &"walk_armour",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_8ub5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7k7d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2c0wr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dlsdt")
+}],
+"loop": true,
+"name": &"walk_femboy",
+"speed": 3.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_f6iqv")
@@ -22,7 +64,7 @@ animations = [{
 "texture": ExtResource("5_ve8ng")
 }],
 "loop": true,
-"name": &"walk",
+"name": &"walk_normal",
 "speed": 3.0
 }]
 
@@ -38,9 +80,9 @@ script = ExtResource("1_j1tc3")
 position = Vector2(2.2217593, 2.078398)
 scale = Vector2(1.8, 1.811)
 sprite_frames = SubResource("SpriteFrames_1edr2")
-animation = &"walk"
-autoplay = "walk"
-frame_progress = 0.21719268
+animation = &"walk_femboy"
+frame = 1
+frame_progress = 0.3479827
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 2)
