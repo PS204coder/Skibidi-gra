@@ -23,14 +23,16 @@ func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na k
 	#death
 	if gremlin_hp <= 0:
 		speed = 0
-		animation.play("normal_death")
+		if animation.animation != "normal_death":
+			animation.play("normal_death")
+		$CollisionShape2D.disabled = true
 
 
-
+#goblin taking damage
 func _on_area_entered(area: Area2D) -> void:
 	gremlin_hp -= Global.attack_value_def_bullet 
 	
-	
+#death after finishing playing the death animation
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animation.animation == "normal_death":
 		queue_free()

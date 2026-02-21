@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dbn2cqc8wlgri"]
+[gd_scene load_steps=6 format=3 uid="uid://dbn2cqc8wlgri"]
 
 [ext_resource type="Script" uid="uid://dr2dr01hh52la" path="res://Scripts/machine_destroyer.gd" id="1_301ty"]
-[ext_resource type="PackedScene" uid="uid://cw26sav4pg3hp" path="res://Scenes/Objects/gremlin.tscn" id="2_c3suo"]
 [ext_resource type="Texture2D" uid="uid://b5x8l1sf6bcna" path="res://Sprites/MachineDestroyer/machine_destroyer_001.png" id="2_whvry"]
 [ext_resource type="Texture2D" uid="uid://4q0bdwdwj2i6" path="res://Sprites/MachineDestroyer/machine_destroyer_002.png" id="3_p1ymn"]
 
@@ -35,10 +34,7 @@ scale = Vector2(1.5, 1.437)
 sprite_frames = SubResource("SpriteFrames_nq2hh")
 frame_progress = 0.31685415
 
-[node name="gremlin" parent="." instance=ExtResource("2_c3suo")]
-visible = false
-
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 3.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
