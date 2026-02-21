@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://t5a2xcaqoyhm"]
+[gd_scene load_steps=6 format=3 uid="uid://t5a2xcaqoyhm"]
 
 [ext_resource type="PackedScene" uid="uid://08ggbvtaj3et" path="res://Scenes/Objects/ball.tscn" id="1_l756w"]
 [ext_resource type="Texture2D" uid="uid://bkel1i2nmhhco" path="res://Graphics/Ground_for_enemies.png" id="3_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://dbn2cqc8wlgri" path="res://Scenes/Objects/machine_destroyer.tscn" id="4_6j5ir"]
 [ext_resource type="Texture2D" uid="uid://c4h18a03j2nn4" path="res://Graphics/slots_for_blocks_001.png" id="4_mgc0q"]
+[ext_resource type="Texture2D" uid="uid://bw1dhw1x56gh" path="res://Graphics/card_inventory.png" id="5_mgc0q"]
 
 [node name="Main_game" type="Node2D"]
 
@@ -23,6 +24,11 @@ texture = ExtResource("3_0e3vx")
 position = Vector2(168, 24)
 
 [node name="Box" type="Sprite2D" parent="."]
-position = Vector2(176, 161)
+position = Vector2(154, 161)
 scale = Vector2(1.4, 1.4)
 texture = ExtResource("4_mgc0q")
+
+[node name="Inventory" type="Sprite2D" parent="."]
+position = Vector2(287.00003, 161)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("5_mgc0q")
