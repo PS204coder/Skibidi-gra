@@ -1,21 +1,74 @@
-[gd_scene load_steps=16 format=3 uid="uid://cw26sav4pg3hp"]
+[gd_scene load_steps=28 format=3 uid="uid://cw26sav4pg3hp"]
 
 [ext_resource type="Script" uid="uid://bhyh5j373kp7y" path="res://Scripts/gremlin.gd" id="1_j1tc3"]
 [ext_resource type="Texture2D" uid="uid://blobcvwhw7dwc" path="res://Graphics/goblin_armour_001.png" id="2_d30bp"]
 [ext_resource type="Texture2D" uid="uid://cfgr68ed8f0bh" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered1.png" id="2_f6iqv"]
+[ext_resource type="Texture2D" uid="uid://b6he6bhhuse20" path="res://Graphics/normal_goblin_death_001.png" id="2_xhlph"]
+[ext_resource type="Texture2D" uid="uid://c701nwkoy2unj" path="res://Graphics/normal_goblin_death_002.png" id="3_lvigp"]
 [ext_resource type="Texture2D" uid="uid://dqtomb2qfwpfl" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered2.png" id="3_odcwj"]
 [ext_resource type="Texture2D" uid="uid://4kpdh06jl75h" path="res://Graphics/goblin_armour_002.png" id="3_r0hwj"]
+[ext_resource type="Texture2D" uid="uid://cka5jy8gktwm" path="res://Graphics/normal_goblin_death_003.png" id="4_38qmx"]
 [ext_resource type="Texture2D" uid="uid://ig2nnlkk5xp3" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered3.png" id="4_acboo"]
 [ext_resource type="Texture2D" uid="uid://vv1jtgb0msph" path="res://Graphics/goblin_armour_003.png" id="4_rgkfx"]
 [ext_resource type="Texture2D" uid="uid://dbn4u5bc1i4ef" path="res://Graphics/goblin_armour_004.png" id="5_2fnh5"]
 [ext_resource type="Texture2D" uid="uid://b53ns5t3vtgp8" path="res://Sprites/GremlinAnimation/Gremlin/goblin_-Recovered4.png" id="5_ve8ng"]
+[ext_resource type="Texture2D" uid="uid://g0otyac1asqm" path="res://Graphics/normal_goblin_death_004.png" id="5_wrl2g"]
 [ext_resource type="Texture2D" uid="uid://dwor0rem6xu45" path="res://Graphics/goblin_femboy_001.png" id="6_8ub5w"]
+[ext_resource type="Texture2D" uid="uid://dmmpua81b6f5t" path="res://Graphics/normal_goblin_death_005.png" id="6_vv2v5"]
 [ext_resource type="Texture2D" uid="uid://cbdxlvyquvn4f" path="res://Graphics/goblin_femboy_002.png" id="7_7k7d8"]
+[ext_resource type="Texture2D" uid="uid://ciq1iuccoi3op" path="res://Graphics/normal_goblin_death_006.png" id="7_lywv0"]
 [ext_resource type="Texture2D" uid="uid://643iv1t7r02k" path="res://Graphics/goblin_femboy_003.png" id="8_2c0wr"]
+[ext_resource type="Texture2D" uid="uid://dx5kb8usd88ko" path="res://Graphics/normal_goblin_death_007.png" id="8_pmc02"]
 [ext_resource type="Texture2D" uid="uid://gp6bdgouusm7" path="res://Graphics/goblin_femboy_004.png" id="9_dlsdt"]
+[ext_resource type="Texture2D" uid="uid://dw02didof1gq6" path="res://Graphics/normal_goblin_death_008.png" id="9_ekamn"]
+[ext_resource type="Texture2D" uid="uid://ddst4ua3ui5md" path="res://Graphics/normal_goblin_death_009.png" id="10_unxxh"]
+[ext_resource type="Texture2D" uid="uid://dvt8p1b85nb0w" path="res://Graphics/normal_goblin_death_010.png" id="11_r741v"]
+[ext_resource type="Texture2D" uid="uid://c7vxb1g6q2s7b" path="res://Graphics/normal_goblin_death_011.png" id="12_supw6"]
+[ext_resource type="Texture2D" uid="uid://bm12gupxf2dfy" path="res://Graphics/normal_goblin_death_012.png" id="13_qkole"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1edr2"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xhlph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lvigp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_38qmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wrl2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vv2v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lywv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pmc02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ekamn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_unxxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r741v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_supw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qkole")
+}],
+"loop": false,
+"name": &"normal_death",
+"speed": 15.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_d30bp")
@@ -80,12 +133,13 @@ script = ExtResource("1_j1tc3")
 position = Vector2(2.2217593, 2.078398)
 scale = Vector2(1.8, 1.811)
 sprite_frames = SubResource("SpriteFrames_1edr2")
-animation = &"walk_femboy"
-frame = 1
-frame_progress = 0.3479827
+animation = &"normal_death"
+frame = 2
+frame_progress = 0.26367506
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_xc7wj")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
