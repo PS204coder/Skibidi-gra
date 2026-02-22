@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="skibidi gra"
-run/main_scene="uid://t5a2xcaqoyhm"
+run/main_scene="uid://cb0k8m5f8ts6h"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
