@@ -5,8 +5,9 @@ const GREMLIN = preload("uid://cw26sav4pg3hp")
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
 @onready var timer: Timer = $Timer
-
+@export var time_to_spawn: int 
 func _ready() -> void:
+	timer.wait_time = time_to_spawn
 	timer.start()
 	animation.play("default")
 

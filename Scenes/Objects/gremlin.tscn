@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cw26sav4pg3hp"]
+[gd_scene format=3 uid="uid://cw26sav4pg3hp"]
 
 [ext_resource type="Script" uid="uid://bhyh5j373kp7y" path="res://Scripts/gremlin.gd" id="1_j1tc3"]
 [ext_resource type="Texture2D" uid="uid://blobcvwhw7dwc" path="res://Graphics/goblin_armour_001.png" id="2_d30bp"]
@@ -125,17 +125,19 @@ animations = [{
 radius = 11.0
 height = 34.0
 
-[node name="gremlin" type="Area2D"]
+[node name="gremlin" type="Area2D" unique_id=618815825]
 position = Vector2(-2, -2)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_j1tc3")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1174166254]
 position = Vector2(2.2217593, 2.078398)
 scale = Vector2(1.8, 1.811)
 sprite_frames = SubResource("SpriteFrames_1edr2")
 animation = &"normal_death"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=767164898]
 position = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_xc7wj")
 

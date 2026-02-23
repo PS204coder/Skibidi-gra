@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://08ggbvtaj3et"]
+[gd_scene format=3 uid="uid://08ggbvtaj3et"]
 
 [ext_resource type="Script" uid="uid://b2h2oaq7ly7cj" path="res://Scripts/ball.gd" id="1_w86wi"]
 [ext_resource type="Texture2D" uid="uid://efwh48mss1ly" path="res://Graphics/Obr_001.png" id="2_j8djf"]
@@ -25,21 +25,22 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_afn8n"]
 radius = 8.0
 
-[node name="Ball" type="Area2D"]
+[node name="Ball" type="Area2D" unique_id=832046484]
 scale = Vector2(1.6, 1.6)
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_w86wi")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1957325097]
 scale = Vector2(0.96875, 1)
 sprite_frames = SubResource("SpriteFrames_w86wi")
 animation = &"idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1610315103]
 position = Vector2(0, -5.625)
 shape = SubResource("CircleShape2D_afn8n")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=1128087221]
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
