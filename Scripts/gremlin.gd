@@ -11,16 +11,19 @@ func _ready() -> void:
 	if random_number == 652:
 		animation.play("walk_femboy")
 		gremlin_type = 652
-	elif random_number >= 500:
+	if random_number >= 500:
 		animation.play("walk_normal")
 		gremlin_type = 1
-	elif random_number < 500:
+	if random_number < 300:
 		animation.play("walk_armour")
 		gremlin_type = 2
+	else:
+		animation.play("walk_normal")
+		gremlin_type = 1
 		
 func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na kulke
 	
-	
+	print(random_number, " ",gremlin_type)
 	#movement
 	var _velocity = Vector2.LEFT * speed 
 	position += _velocity * delta
@@ -29,7 +32,11 @@ func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na k
 	if gremlin_hp <= 0:
 		speed = 0
 		if animation.animation != "normal_death":
-			animation.play("normal_death")
+			if gremlin_type == 1 or gremlin_type == 2:
+				animation.play("normal_death")
+		if animation.animation != "femboy_death":
+			if gremlin_type == 652:
+				animation.play("femboy_death")
 		$CollisionShape2D.disabled = true
 
 
@@ -38,9 +45,9 @@ func _on_area_entered(area: Area2D) -> void:
 	if gremlin_type == 1:
 		gremlin_hp -= Global.attack_value_def_bullet 
 	elif gremlin_type == 2:
-		gremlin_hp -= Global.attack_value_def_bullet/2
+		gremlin_hp -= Global.attack_value_def_bullet/1.5
 	
 #death after finishing playing the death animation
 func _on_animated_sprite_2d_animation_finished() -> void:
-	if animation.animation == "normal_death":
+	if animation.animation == "normal_death" or animation.animation == "femboy_death":
 		queue_free()

@@ -24,7 +24,7 @@ animations = [{
 
 [node name="machine_destroyer" type="CharacterBody2D" unique_id=1234021831]
 script = ExtResource("1_301ty")
-time_to_spawn = 3
+time_to_spawn = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1197281213]
 shape = SubResource("CapsuleShape2D_c3suo")

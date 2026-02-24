@@ -14,7 +14,7 @@ func _ready() -> void:
 	animation.play("idle")
 
 func _process(delta: float) -> void:
-	print(ball_hp)
+	pass
 		
 		
 func spawn_bullet(): #spawnowanie normalnych pociskow ( co sekunde, bez inputu gracza)
