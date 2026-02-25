@@ -37,6 +37,36 @@
 [ext_resource type="Texture2D" uid="uid://c7vxb1g6q2s7b" path="res://Graphics/normal_goblin_death_011.png" id="12_supw6"]
 [ext_resource type="Texture2D" uid="uid://qm8f8clly0nx" path="res://Graphics/femboy_goblin_death_012.png" id="13_plrr4"]
 [ext_resource type="Texture2D" uid="uid://bm12gupxf2dfy" path="res://Graphics/normal_goblin_death_012.png" id="13_qkole"]
+[ext_resource type="Texture2D" uid="uid://demon6xqrlb83" path="res://Graphics/armour_health_bar_001.png" id="38_4g0ca"]
+[ext_resource type="Texture2D" uid="uid://k1un047hgjes" path="res://Graphics/normal_health_bar_001.png" id="38_p2qer"]
+[ext_resource type="Texture2D" uid="uid://berounptps6ic" path="res://Graphics/normal_health_bar_002.png" id="39_hlr8t"]
+[ext_resource type="Texture2D" uid="uid://bwfsdertntkms" path="res://Graphics/armour_health_bar_002.png" id="39_pka2l"]
+[ext_resource type="Texture2D" uid="uid://cvs6v5m0okna4" path="res://Graphics/normal_health_bar_003.png" id="40_2r8hi"]
+[ext_resource type="Texture2D" uid="uid://fqmig22tgxur" path="res://Graphics/armour_health_bar_003.png" id="40_w1gf2"]
+[ext_resource type="Texture2D" uid="uid://va3yiiph5atm" path="res://Graphics/normal_health_bar_004.png" id="41_1ojcc"]
+[ext_resource type="Texture2D" uid="uid://eee51jw3l8nl" path="res://Graphics/armour_health_bar_004.png" id="41_m0k0t"]
+[ext_resource type="Texture2D" uid="uid://xl0o0ncqalqk" path="res://Graphics/armour_health_bar_005.png" id="42_pjsp1"]
+[ext_resource type="Texture2D" uid="uid://unyvjtpn20dv" path="res://Graphics/normal_health_bar_005.png" id="42_wwhws"]
+[ext_resource type="Texture2D" uid="uid://c6wv8qvvflx8g" path="res://Graphics/armour_health_bar_006.png" id="43_fmwha"]
+[ext_resource type="Texture2D" uid="uid://dck0t1u1xs8d0" path="res://Graphics/normal_health_bar_006.png" id="43_ir11d"]
+[ext_resource type="Texture2D" uid="uid://cgfoqrwapmt5b" path="res://Graphics/normal_health_bar_007.png" id="44_5lvko"]
+[ext_resource type="Texture2D" uid="uid://cw6w6ih1xa1ut" path="res://Graphics/armour_health_bar_007.png" id="44_ivj7e"]
+[ext_resource type="Texture2D" uid="uid://8jj0wnf4ta3w" path="res://Graphics/normal_health_bar_008.png" id="45_3l4s3"]
+[ext_resource type="Texture2D" uid="uid://cq6t6qee3kkt2" path="res://Graphics/armour_health_bar_008.png" id="45_dcsjf"]
+[ext_resource type="Texture2D" uid="uid://1sygtucvt5re" path="res://Graphics/normal_health_bar_009.png" id="46_5fqse"]
+[ext_resource type="Texture2D" uid="uid://cp6dbkgcwrh66" path="res://Graphics/armour_health_bar_009.png" id="46_k7qno"]
+[ext_resource type="Texture2D" uid="uid://bgy1atevw4plh" path="res://Graphics/armour_health_bar_010.png" id="47_f8wso"]
+[ext_resource type="Texture2D" uid="uid://ccrf1m02jfadc" path="res://Graphics/normal_health_bar_010.png" id="47_kipn4"]
+[ext_resource type="Texture2D" uid="uid://bw8ejeyl4uvt4" path="res://Graphics/armour_health_bar_011.png" id="48_83eav"]
+[ext_resource type="Texture2D" uid="uid://dwl7x6dbg2es4" path="res://Graphics/normal_health_bar_011.png" id="48_q6d7y"]
+[ext_resource type="Texture2D" uid="uid://8i7lv1v7sf3c" path="res://Graphics/normal_health_bar_012.png" id="49_3k7db"]
+[ext_resource type="Texture2D" uid="uid://066qop1sty4x" path="res://Graphics/armour_health_bar_012.png" id="49_nk03r"]
+[ext_resource type="Texture2D" uid="uid://bn157ao4x2eog" path="res://Graphics/armour_health_bar_013.png" id="50_2l4xp"]
+[ext_resource type="Texture2D" uid="uid://1a7x7hwi72dn" path="res://Graphics/normal_health_bar_013.png" id="50_lwevu"]
+[ext_resource type="Texture2D" uid="uid://l8nhu12aurwr" path="res://Graphics/armour_health_bar_014.png" id="51_80cdh"]
+[ext_resource type="Texture2D" uid="uid://c8fm0igu4je6c" path="res://Graphics/normal_health_bar_014.png" id="51_o62bi"]
+[ext_resource type="Texture2D" uid="uid://c4y6egseglimm" path="res://Graphics/normal_health_bar_015.png" id="52_880i6"]
+[ext_resource type="Texture2D" uid="uid://d23t1oo3r4124" path="res://Graphics/armour_health_bar_015.png" id="52_ncpcf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1edr2"]
 animations = [{
@@ -178,6 +208,114 @@ animations = [{
 radius = 11.0
 height = 34.0
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_4g0ca"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_4g0ca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_pka2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_w1gf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_m0k0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_pjsp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_fmwha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ivj7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_dcsjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_k7qno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_f8wso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_83eav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_nk03r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_2l4xp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_80cdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ncpcf")
+}],
+"loop": false,
+"name": &"armour_health_bar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_p2qer")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_hlr8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_2r8hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_1ojcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_wwhws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ir11d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_5lvko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_3l4s3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_5fqse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_kipn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_q6d7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_3k7db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_lwevu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_o62bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_880i6")
+}],
+"loop": false,
+"name": &"normal_health_bar",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"protection_health_bar",
+"speed": 5.0
+}]
+
 [node name="gremlin" type="Area2D" unique_id=618815825]
 position = Vector2(-2, -2)
 collision_layer = 3
@@ -193,6 +331,13 @@ animation = &"normal_death"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=767164898]
 position = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_xc7wj")
+
+[node name="Health_bar" type="AnimatedSprite2D" parent="." unique_id=1495902273]
+position = Vector2(2, -33)
+scale = Vector2(0.9375, 1)
+sprite_frames = SubResource("SpriteFrames_4g0ca")
+animation = &"normal_health_bar"
+speed_scale = 0.0
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -5,6 +5,7 @@ var gremlin_hp = 20
 var gremlin_type 
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
+@onready var health_bar: AnimatedSprite2D = $Health_bar
 
 var random_number = randi_range(0, 1000)
 func _ready() -> void:
@@ -21,12 +22,18 @@ func _ready() -> void:
 		animation.play("walk_normal")
 		gremlin_type = 1
 		
+		
 func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na kulke
 	
 	print(random_number, " ",gremlin_type)
 	#movement
 	var _velocity = Vector2.LEFT * speed 
 	position += _velocity * delta
+	
+	if gremlin_type == 1:
+		health_bar.animation = "normal_health_bar"
+	if gremlin_type == 2:
+		health_bar.animation = "armour_health_bar"
 	
 	#death
 	if gremlin_hp <= 0:
@@ -44,8 +51,10 @@ func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na k
 func _on_area_entered(area: Area2D) -> void:
 	if gremlin_type == 1:
 		gremlin_hp -= Global.attack_value_def_bullet 
+		health_bar.frame += 5
 	elif gremlin_type == 2:
 		gremlin_hp -= Global.attack_value_def_bullet/1.5
+		health_bar.frame += 3
 	
 #death after finishing playing the death animation
 func _on_animated_sprite_2d_animation_finished() -> void:
