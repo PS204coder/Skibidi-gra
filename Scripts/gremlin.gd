@@ -25,15 +25,18 @@ func _ready() -> void:
 		
 func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na kulke
 	
-	print(random_number, " ",gremlin_type)
+	print(random_number, " ",gremlin_type, " ", health_bar.frame)
 	#movement
 	var _velocity = Vector2.LEFT * speed 
 	position += _velocity * delta
 	
 	if gremlin_type == 1:
-		health_bar.animation = "normal_health_bar"
+		health_bar.play("normal_health_bar")
 	if gremlin_type == 2:
 		health_bar.animation = "armour_health_bar"
+	
+	if health_bar.animation == "armour_health_bar" and health_bar.frame == 14:
+		gremlin_type = 1
 	
 	#death
 	if gremlin_hp <= 0:
@@ -53,8 +56,9 @@ func _on_area_entered(area: Area2D) -> void:
 		gremlin_hp -= Global.attack_value_def_bullet 
 		health_bar.frame += 5
 	elif gremlin_type == 2:
-		gremlin_hp -= Global.attack_value_def_bullet/1.5
-		health_bar.frame += 3
+		gremlin_hp -= Global.attack_value_def_bullet/3
+		health_bar.frame += 7
+
 	
 #death after finishing playing the death animation
 func _on_animated_sprite_2d_animation_finished() -> void:
