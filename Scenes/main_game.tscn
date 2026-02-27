@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dbn2cqc8wlgri" path="res://Scenes/Objects/machine_destroyer.tscn" id="4_6j5ir"]
 [ext_resource type="Texture2D" uid="uid://c4h18a03j2nn4" path="res://Graphics/slots_for_blocks_001.png" id="4_mgc0q"]
 [ext_resource type="Texture2D" uid="uid://bw1dhw1x56gh" path="res://Graphics/card_inventory.png" id="5_mgc0q"]
+[ext_resource type="PackedScene" uid="uid://wpdlb4vma4p4" path="res://Scenes/Objects/card_item_symbol.tscn" id="7_18r40"]
 
 [node name="Main_game" type="Node2D" unique_id=2138345597]
 
@@ -38,3 +39,9 @@ texture = ExtResource("4_mgc0q")
 position = Vector2(287.00003, 161)
 scale = Vector2(1.4, 1.4)
 texture = ExtResource("5_mgc0q")
+
+[node name="card_item_symbol" parent="." unique_id=1977371680 instance=ExtResource("7_18r40")]
+offset_left = 313.0
+offset_top = 150.0
+offset_right = 335.0
+offset_bottom = 162.0

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://wpdlb4vma4p4"]
+
+[ext_resource type="Texture2D" uid="uid://b4t1cp8yjlwei" path="res://Graphics/tsunami icon.png" id="1_7w4tv"]
+[ext_resource type="Script" uid="uid://dpx4hlwgabofv" path="res://Scripts/card_item_symbol.gd" id="2_4cuo3"]
+
+[node name="card_item_symbol" type="TextureButton" unique_id=2006629755]
+offset_right = 22.0
+offset_bottom = 12.0
+scale = Vector2(0.85, 0.85)
+texture_normal = ExtResource("1_7w4tv")
+script = ExtResource("2_4cuo3")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
