@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://t5a2xcaqoyhm"]
 
+[ext_resource type="Texture2D" uid="uid://dxfbarti2275" path="res://Graphics/backgroung.png" id="1_bb2iq"]
 [ext_resource type="PackedScene" uid="uid://08ggbvtaj3et" path="res://Scenes/Objects/ball.tscn" id="1_l756w"]
 [ext_resource type="Texture2D" uid="uid://bkel1i2nmhhco" path="res://Graphics/Ground_for_enemies.png" id="3_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://dbn2cqc8wlgri" path="res://Scenes/Objects/machine_destroyer.tscn" id="4_6j5ir"]
@@ -7,6 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://bw1dhw1x56gh" path="res://Graphics/card_inventory.png" id="5_mgc0q"]
 
 [node name="Main_game" type="Node2D" unique_id=2138345597]
+
+[node name="Backgroung" type="Sprite2D" parent="." unique_id=823980627]
+position = Vector2(174.1, 98.399994)
+scale = Vector2(0.30364585, 0.304321)
+texture = ExtResource("1_bb2iq")
 
 [node name="Ball" parent="." unique_id=2105003309 instance=ExtResource("1_l756w")]
 position = Vector2(64, 81)

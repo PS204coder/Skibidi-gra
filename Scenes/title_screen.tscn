@@ -1,13 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cb0k8m5f8ts6h"]
+[gd_scene format=3 uid="uid://cb0k8m5f8ts6h"]
 
 [ext_resource type="Script" uid="uid://clqatmhpc1m2n" path="res://Scripts/title_screen.gd" id="1_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://4jong4ymlrxi" path="res://Graphics/Start_button.png" id="1_klylv"]
 [ext_resource type="Texture2D" uid="uid://c1tosw53mgdnh" path="res://Graphics/shop_button.png" id="2_p3fck"]
+[ext_resource type="Texture2D" uid="uid://dxfbarti2275" path="res://Graphics/backgroung.png" id="4_twnyg"]
 
-[node name="Title_screen" type="Node2D"]
+[node name="Title_screen" type="Node2D" unique_id=177863052]
 script = ExtResource("1_4gxqj")
 
-[node name="start_button" type="Button" parent="."]
+[node name="Backgroung" type="Sprite2D" parent="." unique_id=1269456187]
+position = Vector2(576, 324)
+texture = ExtResource("4_twnyg")
+
+[node name="start_button" type="Button" parent="." unique_id=512678566]
 offset_left = 296.00003
 offset_top = 224.0
 offset_right = 404.00003
@@ -16,7 +21,7 @@ scale = Vector2(5, 5)
 icon = ExtResource("1_klylv")
 flat = true
 
-[node name="shop_button" type="Button" parent="."]
+[node name="shop_button" type="Button" parent="." unique_id=619381909]
 offset_left = 296.0
 offset_top = 328.00003
 offset_right = 404.0
@@ -25,8 +30,6 @@ scale = Vector2(5, 5)
 icon = ExtResource("2_p3fck")
 flat = true
 
-[node name="game_title" type="Sprite2D" parent="."]
-
-[node name="background" type="Sprite2D" parent="."]
+[node name="game_title" type="Sprite2D" parent="." unique_id=1222952146]
 
 [connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
