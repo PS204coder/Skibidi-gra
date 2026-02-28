@@ -6,6 +6,7 @@ const GREMLIN = preload("uid://cw26sav4pg3hp")
 
 @onready var timer: Timer = $Timer
 @export var time_to_spawn: int 
+
 func _ready() -> void:
 	timer.wait_time = time_to_spawn
 	timer.start()
