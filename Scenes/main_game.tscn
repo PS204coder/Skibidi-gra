@@ -40,8 +40,4 @@ position = Vector2(287.00003, 161)
 scale = Vector2(1.4, 1.4)
 texture = ExtResource("5_mgc0q")
 
-[node name="card_item_symbol" parent="." unique_id=1977371680 instance=ExtResource("7_18r40")]
-offset_left = 313.0
-offset_top = 150.0
-offset_right = 335.0
-offset_bottom = 162.0
+[node name="card_item_symbol" parent="." unique_id=2006629755 instance=ExtResource("7_18r40")]

@@ -25,7 +25,6 @@ func _ready() -> void:
 		
 func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na kulke
 	
-	print(random_number, " ",gremlin_type, " ", health_bar.frame)
 	#movement
 	var _velocity = Vector2.LEFT * speed 
 	position += _velocity * delta

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b8a3ivx3n56ns" path="res://Graphics/water_card.png" id="1_gon07"]
 
 [node name="card" type="TextureButton" unique_id=1690932905]
+z_index = 1
 offset_right = 18.0
 offset_bottom = 32.0
 scale = Vector2(1.39, 1.39)
