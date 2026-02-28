@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://c5kte6usnpaws"]
+
+[ext_resource type="Script" uid="uid://bn3muecnhm4w6" path="res://Scripts/inventory.gd" id="1_ah50j"]
+[ext_resource type="Texture2D" uid="uid://bw1dhw1x56gh" path="res://Graphics/card_inventory.png" id="2_4nbvn"]
+
+[node name="Inventory" type="Node2D" unique_id=1061167102]
+script = ExtResource("1_ah50j")
+
+[node name="CardInventory" type="Sprite2D" parent="." unique_id=1933020039]
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("2_4nbvn")
+
+[node name="leaf 1" type="TextureButton" parent="." unique_id=1100013458]
+offset_left = 25.0
+offset_top = -13.000001
+offset_right = 47.0
+offset_bottom = 0.75734806
+scale = Vector2(0.9348601, 1.017638)
+
+[node name="leaf 2" type="TextureButton" parent="." unique_id=1424064179]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="leaf 3" type="TextureButton" parent="." unique_id=2061921646]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="fire 1" type="TextureButton" parent="." unique_id=1349486444]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="fire 2" type="TextureButton" parent="." unique_id=968147578]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="fire 3" type="TextureButton" parent="." unique_id=234218769]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="lightning 1" type="TextureButton" parent="." unique_id=1224207757]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="lightning 2" type="TextureButton" parent="." unique_id=1234019469]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="lightning 3" type="TextureButton" parent="." unique_id=1812591003]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="water 1" type="TextureButton" parent="." unique_id=1422737088]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="water 2" type="TextureButton" parent="." unique_id=461543415]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="water 3" type="TextureButton" parent="." unique_id=46498985]
+offset_left = -4.0
+offset_top = -2.0
+offset_right = 36.0
+offset_bottom = 38.0
+
+[connection signal="pressed" from="leaf 1" to="." method="_on_leaf_1_pressed"]
+[connection signal="pressed" from="leaf 2" to="." method="_on_leaf_2_pressed"]
+[connection signal="pressed" from="leaf 3" to="." method="_on_leaf_3_pressed"]
+[connection signal="pressed" from="fire 1" to="." method="_on_fire_1_pressed"]
+[connection signal="pressed" from="fire 2" to="." method="_on_fire_2_pressed"]
+[connection signal="pressed" from="fire 3" to="." method="_on_fire_3_pressed"]
+[connection signal="pressed" from="lightning 1" to="." method="_on_lightning_1_pressed"]
+[connection signal="pressed" from="lightning 2" to="." method="_on_lightning_2_pressed"]
+[connection signal="pressed" from="lightning 3" to="." method="_on_lightning_3_pressed"]
+[connection signal="pressed" from="water 1" to="." method="_on_water_1_pressed"]
+[connection signal="pressed" from="water 2" to="." method="_on_water_2_pressed"]
+[connection signal="pressed" from="water 3" to="." method="_on_water_3_pressed"]
