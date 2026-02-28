@@ -1,10 +1,52 @@
-[gd_scene format=3 uid="uid://bkxgg5dxrubmj"]
+[gd_scene format=3 uid="uid://cn1w3p2habt0h"]
 
 [ext_resource type="Texture2D" uid="uid://b8a3ivx3n56ns" path="res://Graphics/water_card.png" id="1_gon07"]
+[ext_resource type="Script" uid="uid://bo7sryauww7ou" path="res://Scripts/card_not_button.gd" id="1_wneph"]
+[ext_resource type="Texture2D" uid="uid://bx0iqa5jk3xfk" path="res://Graphics/fire_card_001.png" id="2_8bl5r"]
+[ext_resource type="Texture2D" uid="uid://djc544d0gx2af" path="res://Graphics/Leaf_card_001.png" id="3_l6qhe"]
+[ext_resource type="Texture2D" uid="uid://bmpoa0utdtgae" path="res://Graphics/lightning_card_001.png" id="4_ymv4g"]
 
-[node name="card" type="TextureButton" unique_id=1690932905]
+[sub_resource type="SpriteFrames" id="SpriteFrames_sd67x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8bl5r")
+}],
+"loop": false,
+"name": &"fire_card",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l6qhe")
+}],
+"loop": false,
+"name": &"leaf_card",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ymv4g")
+}],
+"loop": false,
+"name": &"lightning_card",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gon07")
+}],
+"loop": false,
+"name": &"water_card",
+"speed": 5.0
+}]
+
+[node name="card" type="Node2D" unique_id=901331510]
 z_index = 1
-offset_right = 18.0
-offset_bottom = 32.0
-scale = Vector2(1.39, 1.39)
-texture_normal = ExtResource("1_gon07")
+scale = Vector2(1.4, 1.4)
+script = ExtResource("1_wneph")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1942036651]
+position = Vector2(0, -0.7142857)
+sprite_frames = SubResource("SpriteFrames_sd67x")
+animation = &"water_card"

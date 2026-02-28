@@ -62,4 +62,5 @@ func _on_area_entered(area: Area2D) -> void:
 #death after finishing playing the death animation
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animation.animation == "normal_death" or animation.animation == "femboy_death":
+		Global.gremlins_killed += 1
 		queue_free()
