@@ -41,3 +41,7 @@ scale = Vector2(1.4, 1.4)
 texture = ExtResource("5_mgc0q")
 
 [node name="card_item_symbol" parent="." unique_id=2006629755 instance=ExtResource("7_18r40")]
+offset_left = 311.00003
+offset_top = 152.00002
+offset_right = 333.00003
+offset_bottom = 164.00002
