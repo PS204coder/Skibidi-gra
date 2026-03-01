@@ -1,4 +1,4 @@
-extends Sprite2D
+extends Node2D
 
 @onready var card_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
