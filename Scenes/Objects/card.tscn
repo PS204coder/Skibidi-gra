@@ -1,16 +1,30 @@
 [gd_scene format=3 uid="uid://cn1w3p2habt0h"]
 
-[ext_resource type="Texture2D" uid="uid://b8a3ivx3n56ns" path="res://Graphics/water_card.png" id="1_gon07"]
 [ext_resource type="Script" uid="uid://bo7sryauww7ou" path="res://Scripts/card_not_button.gd" id="1_wneph"]
-[ext_resource type="Texture2D" uid="uid://bx0iqa5jk3xfk" path="res://Graphics/fire_card_001.png" id="2_8bl5r"]
-[ext_resource type="Texture2D" uid="uid://djc544d0gx2af" path="res://Graphics/Leaf_card_001.png" id="3_l6qhe"]
-[ext_resource type="Texture2D" uid="uid://bmpoa0utdtgae" path="res://Graphics/lightning_card_001.png" id="4_ymv4g"]
+[ext_resource type="Texture2D" uid="uid://c1gn4ggpddmn8" path="res://Graphics/fire_card001.png" id="2_boubi"]
+[ext_resource type="Texture2D" uid="uid://c3kv4ovkmdflq" path="res://Graphics/fire_card002.png" id="3_7ns6l"]
+[ext_resource type="Texture2D" uid="uid://8kon6xqck0e2" path="res://Graphics/fire_card003.png" id="4_bkmch"]
+[ext_resource type="Texture2D" uid="uid://blwbye4aeuvrw" path="res://Graphics/Leaf_card001.png" id="5_4n7kw"]
+[ext_resource type="Texture2D" uid="uid://c5py7pyxn1tip" path="res://Graphics/Leaf_card002.png" id="6_wi06n"]
+[ext_resource type="Texture2D" uid="uid://deia46qaaxo8o" path="res://Graphics/Leaf_card003.png" id="7_e5wxt"]
+[ext_resource type="Texture2D" uid="uid://6an14c4lsy4k" path="res://Graphics/lightning_card001.png" id="8_x1k28"]
+[ext_resource type="Texture2D" uid="uid://b4nr703iphug1" path="res://Graphics/lightning_card002.png" id="9_2bx8l"]
+[ext_resource type="Texture2D" uid="uid://c0atjpleg3uwj" path="res://Graphics/lightning_card003.png" id="10_nmuuf"]
+[ext_resource type="Texture2D" uid="uid://bc8q7hb1axyys" path="res://Graphics/water_card_001.png" id="11_x1vw2"]
+[ext_resource type="Texture2D" uid="uid://c1s88enefwmfi" path="res://Graphics/water_card_002.png" id="12_383pf"]
+[ext_resource type="Texture2D" uid="uid://vj6afksx7mpb" path="res://Graphics/water_card_003.png" id="13_b8qka"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sd67x"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_8bl5r")
+"texture": ExtResource("2_boubi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7ns6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bkmch")
 }],
 "loop": false,
 "name": &"fire_card",
@@ -18,7 +32,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_l6qhe")
+"texture": ExtResource("5_4n7kw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wi06n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_e5wxt")
 }],
 "loop": false,
 "name": &"leaf_card",
@@ -26,7 +46,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_ymv4g")
+"texture": ExtResource("8_x1k28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2bx8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nmuuf")
 }],
 "loop": false,
 "name": &"lightning_card",
@@ -34,7 +60,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_gon07")
+"texture": ExtResource("11_x1vw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_383pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_b8qka")
 }],
 "loop": false,
 "name": &"water_card",
@@ -50,4 +82,4 @@ script = ExtResource("1_wneph")
 position = Vector2(0, -0.7142857)
 scale = Vector2(1.15, 1.15)
 sprite_frames = SubResource("SpriteFrames_sd67x")
-animation = &"water_card"
+animation = &"fire_card"
