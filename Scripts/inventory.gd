@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 const CARD = preload("uid://cn1w3p2habt0h")
 
@@ -22,72 +22,81 @@ func _on_water_1_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	water_1.visible = false
 	water_1.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_water_2_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	water_2.visible = false
 	water_2.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_water_3_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	water_3.visible = false
 	water_3.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_fire_1_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	fire_1.visible = false
 	fire_1.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_fire_2_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	fire_2.visible = false
 	fire_2.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_fire_3_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	fire_3.visible = false
 	fire_3.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_lightning_1_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	lightning_1.visible = false
 	lightning_1.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_lightning_2_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	lightning_2.visible = false
 	lightning_2.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_lightning_3_pressed() -> void:
 	var instance = CARD.instantiate()
 	add_child(instance)
 	instance.position = Vector2(103.7, 161)
-	visible = false
+	lightning_3.visible = false
 	lightning_3.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_leaf_1_pressed() -> void:
@@ -96,6 +105,7 @@ func _on_leaf_1_pressed() -> void:
 	instance.position = Vector2(103.7, 161)
 	visible = false
 	water_1.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_leaf_2_pressed() -> void:
@@ -104,6 +114,7 @@ func _on_leaf_2_pressed() -> void:
 	instance.position = Vector2(103.7, 161)
 	visible = false
 	water_1.disabled = true
+	Global.add_a_card_in_play = true
 
 
 func _on_leaf_3_pressed() -> void:
@@ -112,3 +123,4 @@ func _on_leaf_3_pressed() -> void:
 	instance.position = Vector2(103.7, 161)
 	visible = false
 	water_1.disabled = true
+	Global.add_a_card_in_play = true

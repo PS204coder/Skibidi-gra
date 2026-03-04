@@ -5,8 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bkel1i2nmhhco" path="res://Graphics/Ground_for_enemies.png" id="3_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://dbn2cqc8wlgri" path="res://Scenes/Objects/machine_destroyer.tscn" id="4_6j5ir"]
 [ext_resource type="Texture2D" uid="uid://c4h18a03j2nn4" path="res://Graphics/slots_for_blocks_001.png" id="4_mgc0q"]
-[ext_resource type="Texture2D" uid="uid://bw1dhw1x56gh" path="res://Graphics/card_inventory.png" id="5_mgc0q"]
-[ext_resource type="PackedScene" uid="uid://wpdlb4vma4p4" path="res://Scenes/Objects/card_item_symbol.tscn" id="7_18r40"]
+[ext_resource type="PackedScene" uid="uid://c5kte6usnpaws" path="res://Scenes/Objects/inventory.tscn" id="6_bb2iq"]
 
 [node name="Main_game" type="Node2D" unique_id=2138345597]
 
@@ -35,14 +34,8 @@ position = Vector2(154, 161)
 scale = Vector2(1.4, 1.4)
 texture = ExtResource("4_mgc0q")
 
-[node name="Inventory" type="Sprite2D" parent="." unique_id=1720441548]
-position = Vector2(287.00003, 161)
-scale = Vector2(1.4, 1.4)
-texture = ExtResource("5_mgc0q")
-
-[node name="card_item_symbol" parent="." unique_id=2006629755 instance=ExtResource("7_18r40")]
-offset_left = 311.00003
-offset_top = 152.00002
-offset_right = 333.00003
-offset_bottom = 164.00002
-metadata/_edit_use_anchors_ = true
+[node name="Inventory" parent="." unique_id=574301573 instance=ExtResource("6_bb2iq")]
+offset_left = 287.0
+offset_top = 161.0
+offset_right = 298.0
+offset_bottom = 167.0
