@@ -1,8 +1,9 @@
 extends Area2D
 
 var speed = 300
-var attack_value = 5
+var bullet_attack_value = 5
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
+
 
 func _ready() -> void:
 	animation.play("default")
@@ -10,6 +11,8 @@ func _ready() -> void:
 func _process(delta: float) -> void: #w momencie zespawnienia przez magiczną kulke od razu leci w strone gremlinow
 	var _velocity = Vector2.RIGHT * speed
 	position += _velocity * delta
+			
+			
 
 
 func _on_area_entered(area: Area2D) -> void:

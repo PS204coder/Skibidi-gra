@@ -4,6 +4,7 @@ var speed = 50
 var gremlin_hp = 20
 var gremlin_type 
 
+@onready var timer: Timer = $Timer
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var health_bar: AnimatedSprite2D = $Health_bar
 

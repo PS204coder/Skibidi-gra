@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://vevferkh7s4l"]
+[gd_scene format=3 uid="uid://vevferkh7s4l"]
 
 [ext_resource type="Script" uid="uid://xvdqc3kuucqf" path="res://Scripts/ball_bullet.gd" id="1_hikup"]
 [ext_resource type="Texture2D" uid="uid://do02c85et3egq" path="res://Graphics/firebal_001l1.png" id="2_ofs3i"]
@@ -25,15 +25,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hikup"]
 size = Vector2(11, 6)
 
-[node name="Ball_bullet" type="Area2D"]
+[node name="Ball_bullet" type="Area2D" unique_id=1911287124]
 script = ExtResource("1_hikup")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, 1)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1228619811]
 sprite_frames = SubResource("SpriteFrames_hikup")
-frame_progress = 0.8052146
+frame_progress = 0.5429827
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=343685068]
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_hikup")
 

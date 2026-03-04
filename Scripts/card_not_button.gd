@@ -53,15 +53,15 @@ func _process(delta: float) -> void:
 		Global.add_a_card_in_play = false
 		Global.active_cards[0] = Global.id_of_last_pressed
 	if Global.active_cards[1] == 0 and Global.add_a_card_in_play == true:
-		position = Vector2(130,161)
+		position = Vector2(138,161)
 		Global.add_a_card_in_play = false
 		Global.active_cards[1] = Global.id_of_last_pressed
 	if Global.active_cards[2] == 0 and Global.add_a_card_in_play == true:
-		position = Vector2(104,161)
+		position = Vector2(172,161)
 		Global.add_a_card_in_play = false
 		Global.active_cards[2] = Global.id_of_last_pressed
 	if Global.active_cards[3] == 0 and Global.add_a_card_in_play == true:
-		position = Vector2(104,161)
+		position = Vector2(205,161)
 		Global.add_a_card_in_play = false
 		Global.active_cards[3] = Global.id_of_last_pressed
 

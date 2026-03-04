@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dkpvv8epyxxgn"]
+
+[ext_resource type="Script" uid="uid://ciirqdkugqvfq" path="res://Scripts/attack.gd" id="1_bvilc"]
+[ext_resource type="Texture2D" uid="uid://ponhsl3o42up" path="res://Graphics/water_001_anim1.png" id="2_ah5i5"]
+[ext_resource type="Texture2D" uid="uid://cvshr21sjvbyy" path="res://Graphics/water_001_anim2.png" id="3_bdtjo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p7o1o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ah5i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bdtjo")
+}],
+"loop": true,
+"name": &"water_001",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yr45l"]
+
+[node name="Attack" type="Area2D" unique_id=722258390]
+script = ExtResource("1_bvilc")
+
+[node name="Animation" type="AnimatedSprite2D" parent="." unique_id=1284421880]
+sprite_frames = SubResource("SpriteFrames_p7o1o")
+animation = &"water_001"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1784228443]
+shape = SubResource("RectangleShape2D_yr45l")
+
+[node name="Timer" type="Timer" parent="." unique_id=2045079459]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
