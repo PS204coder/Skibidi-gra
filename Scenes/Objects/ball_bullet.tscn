@@ -30,7 +30,8 @@ script = ExtResource("1_hikup")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1228619811]
 sprite_frames = SubResource("SpriteFrames_hikup")
-frame_progress = 0.5429827
+frame = 1
+frame_progress = 0.64029336
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=343685068]
 position = Vector2(1, 1)

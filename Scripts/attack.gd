@@ -3,23 +3,23 @@ extends Area2D
 
 @onready var animation: AnimatedSprite2D = $Animation
 
-const SPEED = 100
+var damage: int
+var slow_down: int
+var burn: int
+var poison: int
+var freeze: int
+var movement_speed: int
 
-var _delta 
+var attack_id: int
 
 func _ready() -> void:
-	visible = false
+	pass
+
 func _physics_process(delta: float) -> void:
-	_delta = delta
-
-				
-
-
-func _on_timer_timeout() -> void:
-	for i in range(3):
-		if Global.active_cards[i] != 0:
-			if Global.active_cards[i] == 10:
-				visible = true
-				var _velocity = Vector2.RIGHT * _delta
-				position += _velocity * SPEED
-				animation.play("water_001")
+	position.x += movement_speed
+	
+func water_001():
+	attack_id = 10
+	damage = 3
+	slow_down = 0.8
+	movement_speed = 150

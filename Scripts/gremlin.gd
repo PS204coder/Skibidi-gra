@@ -4,6 +4,8 @@ var speed = 50
 var gremlin_hp = 20
 var gremlin_type 
 
+const BALL_BULLET = preload("uid://vevferkh7s4l")
+
 @onready var timer: Timer = $Timer
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 @onready var health_bar: AnimatedSprite2D = $Health_bar
@@ -52,12 +54,19 @@ func _process(delta: float) -> void: #w momencie zespawnienia od razu idzie na k
 
 #goblin taking damage
 func _on_area_entered(area: Area2D) -> void:
+	print(health_bar.frame)
 	if gremlin_type == 1:
-		gremlin_hp -= Global.attack_value_def_bullet 
-		health_bar.frame += 5
+		if Attack.attack_id == 10:
+			gremlin_hp -= Attack.damage
+			speed = speed * Attack.slow_down
+			health_bar.frame += gremlin_hp/Attack.damage
+		else:
+			gremlin_hp -= Global.attack_value_def_bullet
+			health_bar.frame += Global.attack_value_def_bullet
+		
 	elif gremlin_type == 2:
 		gremlin_hp -= Global.attack_value_def_bullet/3
-		health_bar.frame += 7
+		health_bar.frame += Global.attack_value_def_bullet
 
 	
 #death after finishing playing the death animation

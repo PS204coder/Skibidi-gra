@@ -64,6 +64,7 @@ func _process(delta: float) -> void:
 		position = Vector2(205,161)
 		Global.add_a_card_in_play = false
 		Global.active_cards[3] = Global.id_of_last_pressed
+	
 
 		
 				

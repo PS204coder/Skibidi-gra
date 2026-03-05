@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://d4bowlxx484em" path="res://Graphics/lightning_icon3.png" id="5_8wyph"]
 [ext_resource type="Texture2D" uid="uid://jbcisfff5lw0" path="res://Graphics/leaf_icon3.png" id="5_jal5m"]
 [ext_resource type="Texture2D" uid="uid://dlc3ilirw5uqr" path="res://Graphics/water_icon003.png" id="5_krdgp"]
+[ext_resource type="Texture2D" uid="uid://ccrmecqklf5st" path="res://Graphics/fire_icon1.png" id="6_nrsb4"]
+[ext_resource type="Texture2D" uid="uid://bf5am5b1javyy" path="res://Graphics/fire_icon2.png" id="7_euq4u"]
+[ext_resource type="Texture2D" uid="uid://dw57ycojmu056" path="res://Graphics/fire_icon3.png" id="8_m3x1i"]
 
 [node name="Inventory" type="Control" unique_id=574301573]
 custom_minimum_size = Vector2(1, 1)
@@ -27,97 +30,124 @@ texture = ExtResource("2_4nbvn")
 [node name="leaf 1" type="TextureButton" parent="." unique_id=1100013458]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -4.090909
-anchor_top = -2.0
-anchor_right = -2.090909
-anchor_bottom = -2.0
+anchor_left = -3.909091
+anchor_top = -1.8333334
+anchor_right = -1.9090909
+anchor_bottom = -1.8333334
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("3_wg2ob")
 metadata/_edit_use_anchors_ = true
 
 [node name="leaf 2" type="TextureButton" parent="." unique_id=1424064179]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -4.4545455
+anchor_left = -4.3636365
 anchor_top = 0.6666667
-anchor_right = -2.4545455
+anchor_right = -2.3636363
 anchor_bottom = 0.6666667
 offset_left = 4.0
 offset_right = 4.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("4_yu25g")
 metadata/_edit_use_anchors_ = true
 
 [node name="leaf 3" type="TextureButton" parent="." unique_id=2061921646]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -4.909091
-anchor_top = 3.1666667
-anchor_right = -2.909091
-anchor_bottom = 3.1666667
+anchor_left = -4.7272725
+anchor_top = 3.3333333
+anchor_right = -2.7272727
+anchor_bottom = 3.3333333
 offset_left = 8.0
 offset_right = 8.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("5_jal5m")
 metadata/_edit_use_anchors_ = true
 
 [node name="fire 1" type="TextureButton" parent="." unique_id=1349486444]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.0
+anchor_top = -1.8333334
+anchor_right = -1.0
+anchor_bottom = -1.8333334
 offset_left = 12.0
 offset_right = 12.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("6_nrsb4")
 metadata/_edit_use_anchors_ = true
 
 [node name="fire 2" type="TextureButton" parent="." unique_id=968147578]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.4545455
+anchor_top = 0.6666667
+anchor_right = -1.4545455
+anchor_bottom = 0.6666667
 offset_left = 16.0
 offset_right = 16.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("7_euq4u")
 metadata/_edit_use_anchors_ = true
 
 [node name="fire 3" type="TextureButton" parent="." unique_id=234218769]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.7272727
+anchor_top = 3.3333333
+anchor_right = -1.7272727
+anchor_bottom = 3.3333333
 offset_left = 20.0
 offset_right = 20.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("8_m3x1i")
 metadata/_edit_use_anchors_ = true
 
 [node name="lightning 1" type="TextureButton" parent="." unique_id=1224207757]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.090909
-anchor_top = -2.0
-anchor_right = -0.09090909
-anchor_bottom = -2.0
-offset_left = 24.0
+anchor_left = 0.18181819
+anchor_top = -1.8333334
+anchor_right = 0.18181819
+anchor_bottom = -1.8330001
+offset_left = 2.0
 offset_right = 24.0
-offset_bottom = 12.0
+offset_bottom = 11.998
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("3_fpyg1")
 metadata/_edit_use_anchors_ = true
 
 [node name="lightning 2" type="TextureButton" parent="." unique_id=1234019469]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.5454545
-anchor_top = 0.33333334
-anchor_right = -0.54545456
-anchor_bottom = 0.33333334
+anchor_left = -2.1818182
+anchor_top = 0.6666667
+anchor_right = -0.18181819
+anchor_bottom = 0.6666667
 offset_left = 28.0
 offset_right = 28.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("4_inwnu")
 metadata/_edit_use_anchors_ = true
 
 [node name="lightning 3" type="TextureButton" parent="." unique_id=1812591003]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.8181818
-anchor_top = 3.1666667
-anchor_right = -0.81818163
-anchor_bottom = 3.1666667
+anchor_left = -2.5454545
+anchor_top = 3.3333333
+anchor_right = -0.5454542
+anchor_bottom = 3.3333333
 offset_left = 32.0
 offset_right = 32.0
 offset_bottom = 12.0
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("5_8wyph")
 metadata/_edit_use_anchors_ = true
 

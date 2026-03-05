@@ -15,12 +15,13 @@ animations = [{
 }],
 "loop": true,
 "name": &"water_001",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yr45l"]
 
 [node name="Attack" type="Area2D" unique_id=722258390]
+z_index = 1
 script = ExtResource("1_bvilc")
 
 [node name="Animation" type="AnimatedSprite2D" parent="." unique_id=1284421880]
@@ -29,8 +30,3 @@ animation = &"water_001"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1784228443]
 shape = SubResource("RectangleShape2D_yr45l")
-
-[node name="Timer" type="Timer" parent="." unique_id=2045079459]
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

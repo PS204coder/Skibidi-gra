@@ -2,6 +2,9 @@ extends Area2D
 
 const BALL_BULLET = preload("uid://vevferkh7s4l")
 const GREMLIN = preload("uid://cw26sav4pg3hp")
+
+const ATTACK = preload("uid://dkpvv8epyxxgn")
+
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
 
@@ -13,10 +16,15 @@ func _ready() -> void:
 	timer.start()
 	animation.play("idle")
 
-func _process(delta: float) -> void:
-	pass
-		
-		
+func _physics_process(delta: float) -> void:
+	for i in range(3):
+		if Global.active_cards[i] == 10:
+			var instance = ATTACK.instantiate()
+			add_child(instance)
+			instance.position = Vector2(10,15)
+			instance.water_001()
+
+
 func spawn_bullet(): #spawnowanie normalnych pociskow ( co sekunde, bez inputu gracza)
 	var instance = BALL_BULLET.instantiate()
 	add_child(instance)

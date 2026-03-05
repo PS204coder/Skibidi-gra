@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://dbn2cqc8wlgri" path="res://Scenes/Objects/machine_destroyer.tscn" id="4_6j5ir"]
 [ext_resource type="Texture2D" uid="uid://c4h18a03j2nn4" path="res://Graphics/slots_for_blocks_001.png" id="4_mgc0q"]
 [ext_resource type="PackedScene" uid="uid://c5kte6usnpaws" path="res://Scenes/Objects/inventory.tscn" id="6_bb2iq"]
-[ext_resource type="PackedScene" uid="uid://dkpvv8epyxxgn" path="res://Scenes/Objects/attack.tscn" id="7_18r40"]
 
 [node name="Main_game" type="Node2D" unique_id=2138345597]
 
@@ -41,5 +40,4 @@ offset_top = 161.0
 offset_right = 298.0
 offset_bottom = 167.0
 
-[node name="Attack" parent="." unique_id=722258390 instance=ExtResource("7_18r40")]
-position = Vector2(93, 86)
+[node name="Cooldown" type="Timer" parent="." unique_id=682845441]

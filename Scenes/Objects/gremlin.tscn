@@ -67,6 +67,16 @@
 [ext_resource type="Texture2D" uid="uid://c8fm0igu4je6c" path="res://Graphics/normal_health_bar_014.png" id="51_o62bi"]
 [ext_resource type="Texture2D" uid="uid://c4y6egseglimm" path="res://Graphics/normal_health_bar_015.png" id="52_880i6"]
 [ext_resource type="Texture2D" uid="uid://d23t1oo3r4124" path="res://Graphics/armour_health_bar_015.png" id="52_ncpcf"]
+[ext_resource type="Texture2D" uid="uid://br6lx8xdb5qpr" path="res://Graphics/armour_health_bar_016.png" id="53_83eav"]
+[ext_resource type="Texture2D" uid="uid://ffv3np3wu4vv" path="res://Graphics/armour_health_bar_017.png" id="54_nk03r"]
+[ext_resource type="Texture2D" uid="uid://cgix2cl58a6pu" path="res://Graphics/armour_health_bar_018.png" id="55_2l4xp"]
+[ext_resource type="Texture2D" uid="uid://mm1b1mdun5xh" path="res://Graphics/armour_health_bar_019.png" id="56_80cdh"]
+[ext_resource type="Texture2D" uid="uid://dw8an5xaqtv2" path="res://Graphics/armour_health_bar_020.png" id="57_ncpcf"]
+[ext_resource type="Texture2D" uid="uid://p4k5ojmcaitu" path="res://Graphics/normal_health_bar_016.png" id="73_j5xry"]
+[ext_resource type="Texture2D" uid="uid://sbc5iyvp7ofy" path="res://Graphics/normal_health_bar_017.png" id="74_kmkyg"]
+[ext_resource type="Texture2D" uid="uid://i1i6q6ctkbh8" path="res://Graphics/normal_health_bar_018.png" id="75_qwl4o"]
+[ext_resource type="Texture2D" uid="uid://bellc6htbir8s" path="res://Graphics/normal_health_bar_019.png" id="76_k5coc"]
+[ext_resource type="Texture2D" uid="uid://cqpmicwnl4hml" path="res://Graphics/normal_health_bar_020.png" id="77_gy0f5"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1edr2"]
 animations = [{
@@ -255,6 +265,21 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("52_ncpcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_83eav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_nk03r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_2l4xp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_80cdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ncpcf")
 }],
 "loop": false,
 "name": &"armour_health_bar",
@@ -305,6 +330,21 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("52_880i6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_j5xry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_kmkyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_qwl4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_k5coc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_gy0f5")
 }],
 "loop": false,
 "name": &"normal_health_bar",
@@ -336,7 +376,7 @@ shape = SubResource("CapsuleShape2D_xc7wj")
 position = Vector2(2, -33)
 scale = Vector2(0.9375, 1)
 sprite_frames = SubResource("SpriteFrames_4g0ca")
-animation = &"armour_health_bar"
+animation = &"normal_health_bar"
 speed_scale = 0.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1429616551]
