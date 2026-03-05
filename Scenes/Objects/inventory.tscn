@@ -3,7 +3,13 @@
 [ext_resource type="Script" uid="uid://bn3muecnhm4w6" path="res://Scripts/inventory.gd" id="1_ah50j"]
 [ext_resource type="Texture2D" uid="uid://bw1dhw1x56gh" path="res://Graphics/card_inventory.png" id="2_4nbvn"]
 [ext_resource type="Texture2D" uid="uid://ddl27d7vpbjdt" path="res://Graphics/water_icon001.png" id="3_4nbvn"]
+[ext_resource type="Texture2D" uid="uid://s0lybsg6fave" path="res://Graphics/lightning_icon1.png" id="3_fpyg1"]
+[ext_resource type="Texture2D" uid="uid://tppuu467uh11" path="res://Graphics/leaf_icon1.png" id="3_wg2ob"]
 [ext_resource type="Texture2D" uid="uid://cl60lrjum81ms" path="res://Graphics/water_icon002.png" id="4_iae52"]
+[ext_resource type="Texture2D" uid="uid://dy6wyr8e784vr" path="res://Graphics/lightning_icon2.png" id="4_inwnu"]
+[ext_resource type="Texture2D" uid="uid://dvn6lsvgapmjh" path="res://Graphics/leaf_icon2.png" id="4_yu25g"]
+[ext_resource type="Texture2D" uid="uid://d4bowlxx484em" path="res://Graphics/lightning_icon3.png" id="5_8wyph"]
+[ext_resource type="Texture2D" uid="uid://jbcisfff5lw0" path="res://Graphics/leaf_icon3.png" id="5_jal5m"]
 [ext_resource type="Texture2D" uid="uid://dlc3ilirw5uqr" path="res://Graphics/water_icon003.png" id="5_krdgp"]
 
 [node name="Inventory" type="Control" unique_id=574301573]
@@ -19,22 +25,40 @@ scale = Vector2(1.4, 1.4)
 texture = ExtResource("2_4nbvn")
 
 [node name="leaf 1" type="TextureButton" parent="." unique_id=1100013458]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.090909
+anchor_top = -2.0
+anchor_right = -2.090909
+anchor_bottom = -2.0
 offset_bottom = 12.0
+texture_normal = ExtResource("3_wg2ob")
 metadata/_edit_use_anchors_ = true
 
 [node name="leaf 2" type="TextureButton" parent="." unique_id=1424064179]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.4545455
+anchor_top = 0.6666667
+anchor_right = -2.4545455
+anchor_bottom = 0.6666667
 offset_left = 4.0
 offset_right = 4.0
 offset_bottom = 12.0
+texture_normal = ExtResource("4_yu25g")
 metadata/_edit_use_anchors_ = true
 
 [node name="leaf 3" type="TextureButton" parent="." unique_id=2061921646]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.909091
+anchor_top = 3.1666667
+anchor_right = -2.909091
+anchor_bottom = 3.1666667
 offset_left = 8.0
 offset_right = 8.0
 offset_bottom = 12.0
+texture_normal = ExtResource("5_jal5m")
 metadata/_edit_use_anchors_ = true
 
 [node name="fire 1" type="TextureButton" parent="." unique_id=1349486444]
@@ -59,24 +83,42 @@ offset_bottom = 12.0
 metadata/_edit_use_anchors_ = true
 
 [node name="lightning 1" type="TextureButton" parent="." unique_id=1224207757]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.090909
+anchor_top = -2.0
+anchor_right = -0.09090909
+anchor_bottom = -2.0
 offset_left = 24.0
 offset_right = 24.0
 offset_bottom = 12.0
+texture_normal = ExtResource("3_fpyg1")
 metadata/_edit_use_anchors_ = true
 
 [node name="lightning 2" type="TextureButton" parent="." unique_id=1234019469]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.5454545
+anchor_top = 0.33333334
+anchor_right = -0.54545456
+anchor_bottom = 0.33333334
 offset_left = 28.0
 offset_right = 28.0
 offset_bottom = 12.0
+texture_normal = ExtResource("4_inwnu")
 metadata/_edit_use_anchors_ = true
 
 [node name="lightning 3" type="TextureButton" parent="." unique_id=1812591003]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.8181818
+anchor_top = 3.1666667
+anchor_right = -0.81818163
+anchor_bottom = 3.1666667
 offset_left = 32.0
 offset_right = 32.0
 offset_bottom = 12.0
+texture_normal = ExtResource("5_8wyph")
 metadata/_edit_use_anchors_ = true
 
 [node name="water 1" type="TextureButton" parent="." unique_id=1422737088]
