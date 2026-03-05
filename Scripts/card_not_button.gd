@@ -1,17 +1,28 @@
 extends Node2D
 
 @onready var card_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var timer: Timer = $Timer
+
+const ATTACK = preload("uid://dkpvv8epyxxgn")
 
 var card_type: int
 var card_level: int
+
+var cool_down_on: bool
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print("tun tung tun tun sdahur")
 	
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
+	if card_sprite.frame == 0:
+		timer.wait_time = 3
+	if card_sprite.frame == 1:
+		timer.wait_time = 6
+	if card_sprite.frame == 2:
+		timer.wait_time = 11
 	#putting the card into the invoentory part 1
 	if Global.add_a_card_in_play == true:
 		if Global.id_of_last_pressed >= 1 and Global.id_of_last_pressed <= 3:
@@ -66,5 +77,20 @@ func _process(delta: float) -> void:
 		Global.active_cards[3] = Global.id_of_last_pressed
 	
 
-		
-				
+
+func _on_timer_timeout() -> void:
+	cool_down_on = false
+
+func spawn_attack():
+	for i in range(4):
+		if Global.active_cards[i] == 10:
+			var instance = ATTACK.instantiate()
+			add_child(instance)
+			instance.global_position = Vector2(80,80)
+			instance.water_001()
+
+func _on_button_pressed() -> void:
+	if cool_down_on == false:
+		spawn_attack()
+		timer.start()
+		cool_down_on = true

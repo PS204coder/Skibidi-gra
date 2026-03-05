@@ -16,7 +16,7 @@ func _ready() -> void:
 	pass
 
 func _physics_process(delta: float) -> void:
-	position.x += movement_speed
+	position.x += movement_speed * delta
 	
 func water_001():
 	attack_id = 10

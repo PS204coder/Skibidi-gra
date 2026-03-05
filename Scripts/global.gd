@@ -17,12 +17,13 @@ var active_cards_full: bool
 #signals throu code
 
 
+
 var add_a_card_in_play: bool
 var id_of_last_pressed: int
 
 
 func _process(delta: float) -> void:
-	print(active_cards," ", id_of_last_pressed," ", add_a_card_in_play, " ")
+
 	for i in range(4):
 		if active_cards[i] == 0:
 			active_cards_full = false
