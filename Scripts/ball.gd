@@ -21,7 +21,7 @@ func _physics_process(delta: float) -> void:
 	pass
 
 
-func spawn_bullet(): #spawnowanie normalnych pociskow ( co sekunde, bez inputu gracza)
+func spawn_bullet(): #spawnowanie normalnych pociskow s( co sekunde, bez inputu gracza)
 	var instance = BALL_BULLET.instantiate()
 	add_child(instance)
 	instance.position = Vector2(10,-8)
