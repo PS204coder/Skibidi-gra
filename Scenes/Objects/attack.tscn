@@ -7,6 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://b48kc2rbecjtd" path="res://Graphics/leaf_attack_lvl2_002.png" id="3_rmpwq"]
 [ext_resource type="Texture2D" uid="uid://dcgnbpxpm3705" path="res://Graphics/leaf_attack_lvl2_003.png" id="4_32lqm"]
 [ext_resource type="Texture2D" uid="uid://dydyxyqfjk6kk" path="res://Graphics/leaf_attack_lvl2_004.png" id="5_swnlf"]
+[ext_resource type="Texture2D" uid="uid://cg4hkyjawjupf" path="res://Graphics/lightning_attack_lvl1_001.png" id="6_h70h7"]
+[ext_resource type="Texture2D" uid="uid://d3111ycc53f2u" path="res://Graphics/lightning_attack_lvl1_002.png" id="7_jlx4j"]
+[ext_resource type="Texture2D" uid="uid://bhtj6pbtcxgxt" path="res://Graphics/lightning_attack_lvl1_003.png" id="8_wbg74"]
+[ext_resource type="Texture2D" uid="uid://d1lo5axrgpksy" path="res://Graphics/lightning_attack_lvl1_004.png" id="9_aa2mc"]
+[ext_resource type="Texture2D" uid="uid://o3a4ydfla0ki" path="res://Graphics/lightning_attack_lvl3_001.png" id="10_ka43q"]
+[ext_resource type="Texture2D" uid="uid://c1hep0t8jblsk" path="res://Graphics/lightning_attack_lvl3_002.png" id="11_ntdtk"]
+[ext_resource type="Texture2D" uid="uid://du8e10xwawyd" path="res://Graphics/lightning_attack_lvl3_003.png" id="12_2jlot"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p7o1o"]
 animations = [{
@@ -29,6 +36,37 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("6_h70h7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jlx4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wbg74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_aa2mc")
+}],
+"loop": true,
+"name": &"lightning_001",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ka43q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ntdtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2jlot")
+}],
+"loop": true,
+"name": &"lightning_003",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_ah5i5")
 }, {
 "duration": 1.0,
@@ -47,7 +85,7 @@ script = ExtResource("1_bvilc")
 
 [node name="Animation" type="AnimatedSprite2D" parent="." unique_id=1284421880]
 sprite_frames = SubResource("SpriteFrames_p7o1o")
-animation = &"leaf_002"
+animation = &"lightning_003"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1784228443]
 shape = SubResource("RectangleShape2D_yr45l")
