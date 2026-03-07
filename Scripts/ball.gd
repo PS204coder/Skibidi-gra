@@ -8,7 +8,6 @@ const ATTACK = preload("uid://dkpvv8epyxxgn")
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
 
 
-
 @onready var timer: Timer = $Timer
 
 var ball_hp = 100

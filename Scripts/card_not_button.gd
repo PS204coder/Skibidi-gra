@@ -89,20 +89,19 @@ func _on_timer_timeout() -> void:
 	cool_down_on = false
 
 func spawn_attack():
-	for i in range(4):
-		
-		#water 001
-		if Global.active_cards[i] == 10:
+	
+	#water 001
+	if card_sprite.animation == "water_card":
+		if card_sprite.frame == 0:
 			var instance = ATTACK.instantiate()
-			add_child(instance)
-			instance.global_position = Vector2(80, 80)
+			add_sibling(instance)
 			instance.water_001()
-			
-			#leaf 002
-		if Global.active_cards[i] == 2:
+		
+	#leaf 002
+	if card_sprite.animation == "leaf_card":
+		if card_sprite.frame == 1:
 			var instance = ATTACK.instantiate()
-			add_child(instance)
-			instance.global_position = Vector2(120, 95)
+			add_sibling(instance)
 			instance.leaf_002()
 
 

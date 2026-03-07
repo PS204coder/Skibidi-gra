@@ -46,8 +46,6 @@ z_index = 1
 script = ExtResource("1_bvilc")
 
 [node name="Animation" type="AnimatedSprite2D" parent="." unique_id=1284421880]
-position = Vector2(3.3881318e-21, -32)
-scale = Vector2(0.68571424, 0.6291667)
 sprite_frames = SubResource("SpriteFrames_p7o1o")
 animation = &"leaf_002"
 
