@@ -9,10 +9,6 @@ var card_type: int
 var card_level: int
 
 var cool_down_on: bool
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	print("tung tung tung tung sahur")
-	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
