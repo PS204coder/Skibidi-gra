@@ -2,10 +2,31 @@
 
 [ext_resource type="Script" uid="uid://ciirqdkugqvfq" path="res://Scripts/attack.gd" id="1_bvilc"]
 [ext_resource type="Texture2D" uid="uid://ponhsl3o42up" path="res://Graphics/water_001_anim1.png" id="2_ah5i5"]
+[ext_resource type="Texture2D" uid="uid://w2p1i4ohrtjb" path="res://Graphics/leaf_attack_lvl2_001.png" id="2_yr45l"]
 [ext_resource type="Texture2D" uid="uid://cvshr21sjvbyy" path="res://Graphics/water_001_anim2.png" id="3_bdtjo"]
+[ext_resource type="Texture2D" uid="uid://b48kc2rbecjtd" path="res://Graphics/leaf_attack_lvl2_002.png" id="3_rmpwq"]
+[ext_resource type="Texture2D" uid="uid://dcgnbpxpm3705" path="res://Graphics/leaf_attack_lvl2_003.png" id="4_32lqm"]
+[ext_resource type="Texture2D" uid="uid://dydyxyqfjk6kk" path="res://Graphics/leaf_attack_lvl2_004.png" id="5_swnlf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p7o1o"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yr45l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rmpwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_32lqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_swnlf")
+}],
+"loop": false,
+"name": &"leaf_002",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_ah5i5")
@@ -25,8 +46,12 @@ z_index = 1
 script = ExtResource("1_bvilc")
 
 [node name="Animation" type="AnimatedSprite2D" parent="." unique_id=1284421880]
+position = Vector2(3.3881318e-21, -32)
+scale = Vector2(0.68571424, 0.6291667)
 sprite_frames = SubResource("SpriteFrames_p7o1o")
-animation = &"water_001"
+animation = &"leaf_002"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1784228443]
 shape = SubResource("RectangleShape2D_yr45l")
+
+[connection signal="animation_finished" from="Animation" to="." method="_on_animation_animation_finished"]
